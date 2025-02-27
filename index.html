@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WMG Wall of Fame</title>
-</head>
-<body>
-    sigmaasdasdasdasdasda
+    <title>WMG Who Said It?</title>
+    <style>
+        body {
+            background-image: url('beautiful-gold-sparkle-background-vector.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 2em;
+        }
+        .banner {
+            flex: 1;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: "Limelight", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4em;
+        }
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -moz-transform: translate(-50%, -50%); /* Firefox */
+            -ms-transform: translate(-50%, -50%);  /* IE 9 */
+            -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+            -o-transform: translate(-50%, -50%); /* Opera */
+            transform: translate(-50%, -50%);
+            }
+            .footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+   background: transparent;
+    border: none !important;
+    color:blue;
+}
+                </style>
+            </head>
+            <body>
+    <div class="container">
+        <div class="banner">WMG Who Said It?</div>
+        <div class="center">
+            <h2>I have 40 discord kittens.</h2>
+            <div style="text-align: left;">
+                <input type="radio" id="1" name="guess" value="Mr Parry">
+                <label for="1">Mr Parry</label><br>
+                <input type="radio" id="2" name="guess" value="Mr Wood">
+                <label for="2">Mr Wood</label><br>
+                <input type="radio" id="3" name="guess" value="Mr Baldwin">
+                <label for="3">Mr Baldwin</label>
+            </div>
+            <button style="font-size: 0.5em;" 
+            onclick='
+            document.getElementById("1").style.color = "red";
+            document.getElementById("2").style.color = "green";
+            document.getElementById("3").style.color = "red";
+            '>Submit</button>
+            
+        </div>
+        <button class="footer" onClick="window.location.reload();">New Quote</button>
+    </div>
 </body>
 </html>
